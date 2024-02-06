@@ -1,6 +1,7 @@
 
 import './App.css';
-import CreatingaCustomComponnetpart2 from './components/CreatingaCustomComponnetpart2';
+import CreatingaCustomComponnetpart2 from './ReactBasics/components/CreatingaCustomComponnetpart2';
+import StylingInReact from './ReactBasics/components/StylingInReact';
 
 function App() {
   const name="anusha"
@@ -9,7 +10,8 @@ function App() {
      {/* way of inject the Hello component to App component */}
      <Hello name={name}/> 
      <CreatingaCustomComponnetpart2/>
-    anusha
+     <StylingInReact/>
+
     </div>
   );
 }
