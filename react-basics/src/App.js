@@ -1,25 +1,16 @@
+import React from 'react'
+import Imports from './ReactBasics/components/Imports'
+import ImportReactBasicspart2 from "./React/ReactBasicspart2/ImportReactBasicspart2";
 
-import './App.css';
-import CreatingaCustomComponnetpart2 from './ReactBasics/components/CreatingaCustomComponnetpart2';
-import StylingInReact from './ReactBasics/components/StylingInReact';
 
-function App() {
-  const name="anusha"
+
+const App = () => {
   return (
-    <div className="App">
-     {/* way of inject the Hello component to App component */}
-     <Hello name={name}/> 
-     <CreatingaCustomComponnetpart2/>
-     <StylingInReact/>
-
-    </div>
+    <>
+      {/* <Imports/> */}
+      <ImportReactBasicspart2 />
+    </>
   );
 }
 
-export default App;
-//creating a custom component
-const  Hello=(props)=>{
-  return <h2>Hello{props.name}-This is coming from custom componentppp</h2>;
-
-
-}
+export default App
