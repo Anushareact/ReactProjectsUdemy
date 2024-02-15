@@ -1,5 +1,6 @@
 export const profiles = [
   {
+    id: 1,
     img: "https://i.ibb.co/gvwfFJK/profile1.png",
     name: "Adaora Nwodo",
     job: "Cloud Engineer",
@@ -7,6 +8,7 @@ export const profiles = [
     link: "https://twitter.com/AdoraNwodo",
   },
   {
+    id: 2,
     img: "https://i.ibb.co/7W7rV8v/profile2.png",
     name: "John Doe",
     job: "Web Developer",
@@ -14,10 +16,25 @@ export const profiles = [
     link: "#",
   },
   {
+    id:3,
     img: "https://i.ibb.co/tKn71dn/profile3.png",
     name: "Fisayo Tinuke",
     job: "Mobile Developer",
     company: "ZinoTrust",
+    link: "#",
+  },
+  {id:4,
+    img: "https://i.ibb.co/tKn71dn/profile3.png",
+    name: "Anusha",
+    job: "Web Developer",
+    company: "Google",
+    link: "#",
+  },
+  {id:5,
+    img: "https://i.ibb.co/tKn71dn/profile3.png",
+    name: "Anusha palleboina",
+    job: "Web Developer",
+    company: "Google1",
     link: "#",
   },
 ];
