@@ -14,14 +14,14 @@ function App() {
   return (
     <>
       {/* <Imports/> */}
-      {/* <ImportReactBasicspart2 /> */}
+      <ImportReactBasicspart2 />
       {/* <ProfileList/> */}
      
     
 
      {/* <UseState/> */}
      {/* <CounterApp/> */}
-     <UseStateArray/>
+     {/* <UseStateArray/> */}
 
     </>
   );
