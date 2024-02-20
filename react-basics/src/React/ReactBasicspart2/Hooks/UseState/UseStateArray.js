@@ -20,7 +20,7 @@ const UseStateArray = () => {
         const { name, job, company, id } = profile;
         return (
           <div className={styles.smallCard} key={id}>
-            <h3>{name}</h3>
+            <h3>Name:{name}</h3>
             <div
               style={{
                 display: "flex",
@@ -29,8 +29,8 @@ const UseStateArray = () => {
                 justifyContent: "space-between",
               }}
             >
-              <p>{job}</p>
-              <span>{company}</span>
+              <p>Job:{job}</p>
+              <span>Company:{company}</span>
               <button
                 className={styles.button}
                 onClick={()=>HandleDelete(id)}
