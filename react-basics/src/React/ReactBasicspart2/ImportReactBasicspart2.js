@@ -4,6 +4,7 @@ import IfElseCondition from './Conditionals/IfElseCondition';
 import Logicalaandoperator from './Conditionals/Logicalaandoperator';
 import TernaryOperator from './Conditionals/TernaryOperator';
 import Conditionalswithprops from './Conditionals/Conditionalswithprops';
+import Usereducer from './Hooks/UseReducer/Usereducer';
 
 const ImportReactBasicspart2 = () => {
   return (
@@ -15,7 +16,8 @@ const ImportReactBasicspart2 = () => {
       {/* <IfElseCondition bool={false} />
       <Logicalaandoperator bool={true} />
       <TernaryOperator bool={false} /> */}
-      <Conditionalswithprops/>
+      {/* <Conditionalswithprops/> */}
+      <Usereducer/>
     </div>
   );
 }

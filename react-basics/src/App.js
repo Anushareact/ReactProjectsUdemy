@@ -1,7 +1,7 @@
 import React ,{useState}from 'react'
 import Imports from './ReactBasics/components/Imports'
 import ImportReactBasicspart2 from "./React/ReactBasicspart2/ImportReactBasicspart2";
-import "./App.css"
+// import "./App.css"
 import ProfileList from './Projects/Profile-app/components/profile/ProfileList';
 
 
@@ -15,7 +15,7 @@ function App() {
   return (
     <>
       {/* <Imports/> */}
-      {/* <ImportReactBasicspart2 /> */}
+      <ImportReactBasicspart2 />
       {/* <ProfileList/> */}
      
     
@@ -23,7 +23,7 @@ function App() {
      {/* <UseState/> */}
      {/* <CounterApp/> */}
      {/* <UseStateArray/> */}
-     <Profile/>
+     {/* <Profile/> */}
 
     </>
   );
