@@ -10,12 +10,13 @@ import UseState from './React/ReactBasicspart2/Hooks/UseState/UseState';
 import CounterApp from './React/ReactBasicspart2/Hooks/UseState/CounterApp.js';
 import UseStateArray from './React/ReactBasicspart2/Hooks/UseState/UseStateArray.js';
 import Profile from './Projects/Profile-app/components/user-profile-app/Profile.js';
+import TaskManager from './Projects/Task-Manager-App-Using-useState-Hook/TaskManager.js';
 
 function App() {
   return (
     <>
       {/* <Imports/> */}
-      <ImportReactBasicspart2 />
+      {/* <ImportReactBasicspart2 /> */}
       {/* <ProfileList/> */}
      
     
@@ -24,6 +25,7 @@ function App() {
      {/* <CounterApp/> */}
      {/* <UseStateArray/> */}
      {/* <Profile/> */}
+     <TaskManager/>
 
     </>
   );

@@ -17,7 +17,7 @@ const ImportReactBasicspart2 = () => {
       <Logicalaandoperator bool={true} />
       <TernaryOperator bool={false} /> */}
       {/* <Conditionalswithprops/> */}
-      <Usereducer/>
+      {/* <Usereducer/> */}
     </div>
   );
 }

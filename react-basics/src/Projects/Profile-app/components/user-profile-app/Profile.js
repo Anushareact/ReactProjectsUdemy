@@ -26,7 +26,7 @@ const Profile = () => {
           </div>
         );
       })}
-      <button onClick={()=>setuserProfie([])}>clear all</button>
+      <button onClick={()=>setuserProfie([])} className="button">clear all</button>
     </section>
     
 
