@@ -15,6 +15,7 @@ const Task = ({id,name,date,complete,EditTask}) => {
         </p>
       </span>
       <span>
+        {/* //editing step1 */}
         <button className={styles["icon-styles"]} onClick={()=>EditTask(id)}>
           <FaEdit color="green" />
         </button>
