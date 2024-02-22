@@ -1,9 +1,22 @@
 import React from "react";
 import styles from "./TaskManager.module.css";
 import {FaCheckDouble,FaEdit,FaTrashAlt} from "react-icons/fa"
-const Task = ({id,name,date,complete,EditTask,DeleteTask}) => {
+const Task = ({
+  id,
+  name,
+  date,
+  complete,
+  EditTask,
+  DeleteTask,
+  CompleteTask,
+}) => {
   return (
-    <div key={id} className={complete ? `${styles.taskcard} ${styles.complete}`: styles.taskcard}>
+    <div
+      key={id}
+      className={
+        complete ? `${styles.taskcard} ${styles.complete}` : styles.taskcard
+      }
+    >
       <span>
         <p>
           <b>Task:</b>
@@ -16,13 +29,16 @@ const Task = ({id,name,date,complete,EditTask,DeleteTask}) => {
       </span>
       <span>
         {/* //editing step1 */}
-        <button className={styles["icon-styles"]} onClick={()=>EditTask(id)}>
+        <button className={styles["icon-styles"]} onClick={() => EditTask(id)}>
           <FaEdit color="green" />
         </button>
-        <button className={styles["icon-styles"]} onClick={()=>DeleteTask(id)}>
+        <button
+          className={styles["icon-styles"]}
+          onClick={() => DeleteTask(id)}
+        >
           <FaTrashAlt color="red" />
         </button>
-        <button className={styles["icon-styles"]}>
+        <button className={styles["icon-styles"]} onClick={() => CompleteTask(id)}>
           <FaCheckDouble color="purple" />
         </button>
       </span>

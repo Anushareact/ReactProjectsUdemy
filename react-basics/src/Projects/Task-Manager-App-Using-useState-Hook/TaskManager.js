@@ -82,6 +82,21 @@ setTaskID("")
    
 
   } 
+  //function for completing the task
+  const CompleteTask=(id)=>{
+    console.log(id);
+    setTasks(tasks.map((task)=>{
+      if(task.id === id){
+        return {...task,complete:true}
+      }
+      return task
+
+
+
+    }))
+
+
+  }
   return (
     <div className={styles.container}>
       <h1 className={styles.titile}>TaskManager</h1>
@@ -125,7 +140,14 @@ setTaskID("")
       ) : (
         <>
           {tasks.map((task) => {
-            return <Task {...task}  EditTask={EditTask} DeleteTask={DeleteTask}/>;
+            return (
+              <Task
+                {...task}
+                EditTask={EditTask}
+                DeleteTask={DeleteTask}
+                CompleteTask={CompleteTask}
+              />
+            );
           })}
         </>
       )}
