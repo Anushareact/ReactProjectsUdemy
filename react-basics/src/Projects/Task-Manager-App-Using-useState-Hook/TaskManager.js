@@ -71,6 +71,17 @@ setTaskID("")
 
 
   }
+  //Deleting the task
+  const DeleteTask=(id)=>{
+    console.log(id);
+    //logic for deleting the task
+    if(window.confirm("are you sure")===true){
+ const newTasks = tasks.filter((task) => task.id !== id);
+ setTasks(newTasks);
+    }
+   
+
+  } 
   return (
     <div className={styles.container}>
       <h1 className={styles.titile}>TaskManager</h1>
@@ -114,7 +125,7 @@ setTaskID("")
       ) : (
         <>
           {tasks.map((task) => {
-            return <Task {...task}  EditTask={EditTask}/>;
+            return <Task {...task}  EditTask={EditTask} DeleteTask={DeleteTask}/>;
           })}
         </>
       )}

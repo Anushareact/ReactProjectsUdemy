@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./TaskManager.module.css";
 import {FaCheckDouble,FaEdit,FaTrashAlt} from "react-icons/fa"
-const Task = ({id,name,date,complete,EditTask}) => {
+const Task = ({id,name,date,complete,EditTask,DeleteTask}) => {
   return (
     <div key={id} className={complete ? `${styles.taskcard} ${styles.complete}`: styles.taskcard}>
       <span>
@@ -19,7 +19,7 @@ const Task = ({id,name,date,complete,EditTask}) => {
         <button className={styles["icon-styles"]} onClick={()=>EditTask(id)}>
           <FaEdit color="green" />
         </button>
-        <button className={styles["icon-styles"]}>
+        <button className={styles["icon-styles"]} onClick={()=>DeleteTask(id)}>
           <FaTrashAlt color="red" />
         </button>
         <button className={styles["icon-styles"]}>
