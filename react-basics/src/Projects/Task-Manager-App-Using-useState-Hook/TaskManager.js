@@ -1,10 +1,13 @@
 import React, { useState, useRef, useEffect } from "react";
 import styles from "./TaskManager.module.css";
+import useLocalStorage from "use-local-storage"
 import Task from "./Task";
 const TaskManager = () => {
   const [name, setName] = useState("");
   const [date, setDate] = useState("");
-  const [tasks, setTasks] = useState([]);
+  // const [tasks, setTasks] = useState([]);
+  //storing our tasj into local storage
+    const [tasks, setTasks] =useLocalStorage("tasks",[]);
   //Editing step2 creating a 2 states
   const [taskID,setTaskID]=useState(null)
     const [isEditing, setIsEditing] = useState(false);
